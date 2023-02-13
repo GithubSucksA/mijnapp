@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: rgb(246, 90, 6);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  height: 20vh;
+}
+header h1 {
+  margin-bottom: -1vh;
+}
+nav {
+  background-color: rgb(185, 76, 16);
+  margin-top: -1.2vh;
+  margin-bottom: 1.2vh;
+  padding-top: 1px;
+  border-bottom: yellow solid 2px;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  right: 5%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  padding-bottom: .5rem;
+}
+footer {
+  background-color:rgb(185, 76, 16);
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+footer p:first-of-type {
+  padding-top: 1.5rem;
+  margin-bottom: 0;
+}
+footer p:last-of-type {
+  padding-bottom: 1rem;
+  margin-top: 0;
+}
+.reactcontain {
+  text-align: center;
+}
+button {
+  padding: 15px;
+  border-radius: 10%;
+  background-color: rgb(185, 76, 16);
+  color: whitesmoke;
+  font-weight: 1000;
+}
+button:active {
+  position: relative;
+  top: 5px;
+  opacity: .8;
+}
+img {
+  width: 200px;
+}
+.quotes {
+  margin: 10px auto;
+  width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 720px){
+  ul {
+      display: flex;
+      margin-left: 6.5%;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar {
+      margin-left: 2rem;
+  }
+  .navbar li {
+      margin-right: 2rem;
+  }
+  img {
+    width: 400px;
+  }
+  .quotes {
+    width: 60%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .navbar {
+      margin-left: 4rem;
+  }
+  .quotes {
+    width: 100%;
+    margin: 10px auto;
   }
 }
